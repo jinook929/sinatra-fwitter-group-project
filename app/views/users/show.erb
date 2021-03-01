@@ -1,0 +1,8 @@
+<h2>Your Tweets</h2>
+
+<% @tweets.each do |tweet| %>
+  <h4><%= tweet.content %></h4>
+  <p>created @ <%= tweet.created_at %></p>
+  <p>ustated @ <%= tweet.updated_at %></p>
+  <hr>
+<% end %>
